@@ -1,0 +1,125 @@
+@import './tokens.css';
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Zen+Dots&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    color-scheme: light;
+    background-color: var(--mint-50);
+    color: var(--ink);
+  }
+
+  body {
+    background-color: var(--mint-50);
+    color: var(--ink);
+    margin: 0;
+    padding: 0;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Zen Dots', cursive, sans-serif;
+    letter-spacing: -0.01em;
+  }
+
+  h4, h5, h6 {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 700;
+  }
+
+  code, kbd, samp, pre, .font-mono {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@layer utilities {
+  .font-zen {
+    font-family: 'Zen Dots', cursive, sans-serif !important;
+  }
+
+  .font-quantico {
+    font-family: 'Zen Dots', cursive, sans-serif !important;
+  }
+
+  /* Text helpers */
+  .text-ink { color: var(--ink); }
+  .text-ink-2 { color: var(--ink-2); }
+  .text-ink-3 { color: var(--ink-3); }
+  .text-accent { color: var(--accent); }
+  .text-accent-strong { color: var(--accent-strong); }
+  .text-accent-heading { color: var(--accent-heading); }
+  .text-accent-text { color: var(--accent-text); }
+
+  /* Background helpers */
+  .bg-mint-50 { background-color: var(--mint-50); }
+  .bg-mint-100 { background-color: var(--mint-100); }
+  .bg-mint-200 { background-color: var(--mint-200); }
+  .bg-mint-300 { background-color: var(--mint-300); }
+  .bg-mint-400 { background-color: var(--mint-400); }
+  .bg-mint-500 { background-color: var(--mint-500); }
+  .bg-paper { background-color: var(--mint-50); }
+  .bg-paper-2 { background-color: var(--mint-100); }
+  .bg-surface { background-color: var(--surface); }
+  .bg-surface-tint { background-color: var(--surface-tint); }
+  .bg-accent-soft { background-color: var(--accent-soft); }
+  .bg-accent { background-color: var(--accent); }
+
+  /* Borders & Shadows */
+  .border-line { border-color: var(--line); }
+  .border-line-strong { border-color: var(--line-strong); }
+  .border-glass { border-color: var(--glass-border); }
+  .border-accent { border-color: var(--accent); }
+  .border-accent-strong { border-color: var(--accent-strong); }
+
+  .shadow-glass {
+    box-shadow: var(--shadow-glass);
+  }
+
+  .glow-accent {
+    box-shadow: 0 0 20px var(--accent-glow);
+  }
+  .glow-accent-lg {
+    box-shadow: 0 0 50px var(--accent-glow);
+  }
+  .drop-glow-accent {
+    filter: drop-shadow(0 0 25px var(--accent-glow));
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--mint-100);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--mint-500);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-strong);
+}
+
+/* Reduced Motion Respect */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

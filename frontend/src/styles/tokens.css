@@ -1,0 +1,97 @@
+:root {
+  /* ========================================================
+     POLISOCCER DESIGN SYSTEM TOKENS — MINT KACA BERGRID
+     ======================================================== */
+
+  /* Mint Theme Backgrounds */
+  --mint-50: #F5F9F6;          /* latar halaman dasar */
+  --mint-100: #E1F4E9;         /* atas section */
+  --mint-200: #D6F0E1;         /* tengah section */
+  --mint-300: #CAEBD9;         /* bawah section */
+  --mint-400: #C0E6D1;         /* bawah section pekat */
+  --mint-500: #AADEC1;         /* garis/kontrol kaca */
+
+  /* Grid Tokens */
+  --grid-line: rgba(18, 161, 80, 0.10);
+  --grid-line-major: rgba(18, 161, 80, 0.16);
+  --grid-line-hot: rgba(18, 161, 80, 0.30);
+
+  /* Glass Tokens */
+  --glass-top: #FAFEFB;
+  --glass-mid: #E3F8EB;
+  --glass-bottom: #C0EFD5;
+  --glass-border: rgba(255, 255, 255, 0.70);
+
+  /* Surface & Lines */
+  --paper: var(--mint-50);
+  --paper-2: var(--mint-100);
+  --surface: #FFFFFF;
+  --surface-tint: #F0F8F3;
+  --line: #DCE8E0;
+  --line-strong: #C3D6CA;
+
+  /* Ink / Teks Kontras Tinggi (WCAG AA Terjamin) */
+  --ink: #0E2A20;              /* teks utama, rasio kontras > 10:1 */
+  --ink-2: #3F5E50;            /* teks sekunder/body, rasio > 5.5:1 */
+  --ink-3: #5E7C6E;            /* placeholder / caption / sub-label, rasio > 4.5:1 */
+
+  /* Aksen Hijau */
+  --accent: #7CFFB2;            /* HANYA untuk isi tombol/chip/glow */
+  --accent-hover: #A6FFCB;
+  --accent-press: #4FE594;
+  --accent-soft: #DDF7E8;       /* latar chip/badge terang */
+  --accent-strong: #12A150;     /* ikon, garis, isi kecil */
+  --accent-heading: #0F9447;    /* kata penekanan pada judul besar >= 24px */
+  --accent-text: #0B7A3B;       /* teks kecil/label hijau; kontras ~4.7:1 di atas mint-100 */
+  --accent-glow: rgba(124, 255, 178, 0.45);
+  --seg-active: #3E5C4F;        /* tab aktif */
+
+  /* Status Semantik */
+  --danger: #E5484D;
+  --danger-soft: #FDECEC;
+  --warning: #E8A317;
+  --warning-soft: #FFF4DB;
+  --info: #2F7BEA;
+  --info-soft: #E6F0FF;
+
+  /* Bentuk & Radius */
+  --radius-10: 10px;
+  --radius-14: 14px;
+  --radius-20: 20px;
+  --radius-28: 28px;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+
+  /* Bayangan Halus & Kaca */
+  --shadow-glass: 0 1px 0 rgba(255, 255, 255, 0.8) inset, 0 18px 50px rgba(14, 42, 32, 0.10);
+  --scrim: rgba(14, 42, 32, 0.28); /* backdrop modal/drawer dengan blur */
+  --shadow-sm: 0 1px 2px rgba(14, 42, 32, 0.06);
+  --shadow-md: 0 8px 24px rgba(14, 42, 32, 0.08);
+  --shadow-lg: 0 24px 60px rgba(14, 42, 32, 0.14);
+  --shadow-dropdown: 0 16px 40px rgba(14, 42, 32, 0.12);
+  --shadow-card: 0 8px 24px rgba(14, 42, 32, 0.08);
+
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* Fallback aliases for smooth transition */
+  --panel: var(--paper);
+  --panel-2: var(--paper-2);
+  --panel-3: var(--line);
+  --white: #FFFFFF;
+  --text: var(--ink);
+  --text-muted: var(--ink-2);
+  --text-faint: var(--ink-3);
+  --text-on-dark: var(--ink);
+  --text-on-dark-muted: var(--ink-2);
+  --bg-0: var(--mint-100);
+  --bg-1: var(--mint-200);
+  --bg-2: var(--mint-300);
+  --bg-glow: var(--mint-200);
+  --night-0: var(--mint-100);
+  --night-1: var(--mint-200);
+  --night-2: var(--mint-300);
+  --on-night: var(--ink);
+  --on-night-2: var(--ink-2);
+}
