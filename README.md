@@ -1,5 +1,4 @@
-# POLISOCCER - SISTEM RESERVASI MINI SOCCER POLITEKNIK NEGERI LAMPUNG
-
+# polinela mici socer
 Sistem Reservasi, REST API, dan Manajemen Arena Mini Soccer Politeknik Negeri Lampung berbasis 4 Halaman Akun dengan tema visual **Dark Neon Light-Green Tech** (`#7CFFB2` neon green, dark black-green gradient background `#020805`, panel terang `#EEF5F1`, 0% pink/magenta).
 
 ---
